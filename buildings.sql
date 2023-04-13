@@ -1,0 +1,2 @@
+CREATE TABLE buildings (id SERIAL PRIMARY KEY, name VARCHAR(80) NOT NULL, shortname VARCHAR(10) UNIQUE);
+CREATE TABLE rooms (number INTEGER, buildingid INTEGER REFERENCES buildings(id), seating INTEGER);
