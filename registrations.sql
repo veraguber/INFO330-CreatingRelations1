@@ -1,0 +1,1 @@
+CREATE TABLE student_courses (studentid INTEGER, course TEXT, grade FLOAT DEFAULT NULL, FOREIGN KEY (studentid) REFERENCES students(id), FOREIGN KEY (course) REFERENCES courses(code));
